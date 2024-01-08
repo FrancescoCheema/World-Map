@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class MapWorldComponent {
 
+  setCountryData(event: any) {
+    console.log("event", event.target.country)
+  }
 }
