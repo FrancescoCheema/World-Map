@@ -9,8 +9,8 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  fetchCountryNames(country: string) {
-    let api = "http://api.worldbank.org/v2/country/${country}?format=json";
+  fetchCountryData(country: string) {
+    let api = 'https://api.worldbank.org/v2/country/${country}?format=json';
     return this.http.get(api);
   }
 }
