@@ -1289,10 +1289,38 @@
      title="Zimbabwe"
      id="ZW" />
 </svg>
-<section class="">
-  <div class="map-info">
-    <ul>
-      <li>Capital: {{country.capital}}</li>
-    </ul>
-  </div>
-</section>
+<table>
+  <tr>
+    <td>
+      <svg svg width="1000" height="100" viewBox="0 0 1000 800">
+      </svg>
+    </td>
+    <td>
+      <table id="map-info">
+        <tr>
+          <th colspan="2" style="padding-bottom: 10px;font-size: 25px; color: rgb(130, 8, 8);">{{ country.nation }}</th>
+        </tr>
+        <tr>
+          <td>Capital:</td>
+          <td>{{ country.capital }}</td>
+        </tr>
+        <tr>
+          <td>Region:</td>
+          <td>{{ country.region }}</td>
+        </tr>
+        <tr>
+          <td>Income:</td>
+          <td>{{ country.incomeLevel }}</td>
+        </tr>
+        <tr>
+          <td>Latitude:</td>
+          <td>{{ country.latitude }}</td>
+        </tr>
+        <tr>
+          <td>Longitude:</td>
+          <td>{{ country.longitude }}</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

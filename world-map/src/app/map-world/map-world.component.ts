@@ -22,7 +22,11 @@ export class MapWorldComponent {
       this.country = {
         ...data,
         nation: event.target.getAttribute('title'),
-        capital: countryInfo.capitalCity
+        capital: countryInfo.capitalCity,
+        region: data[1][0].region.value,
+        incomeLevel: data[1][0].incomeLevel.value,
+        latitude: data[1][0].latitude,
+        longitude: data[1][0].longitude
       }
     })
   }
